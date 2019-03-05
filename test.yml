@@ -3,5 +3,6 @@
   hosts: localhost
   tasks:
    - name: Update motd in temp
-     copy: "This is test motd file"
-     dest: /tmp/motd
+     copy:
+       content: "{{This is test motd file}}\n"
+        dest: /tmp/motd
