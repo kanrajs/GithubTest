@@ -1,0 +1,7 @@
+---
+- name: This is test with ymal
+  hosts: localhost
+  tasks:
+   - name: Update motd in temp
+     copy: "This is test motd file"
+     dest: /tmp/motd
